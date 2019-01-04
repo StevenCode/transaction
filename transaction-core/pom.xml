@@ -12,6 +12,19 @@
     <artifactId>transaction-core</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.steven.transaction</groupId>
+            <artifactId>transaction-common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>transaction-core</finalName>
         <plugins>
