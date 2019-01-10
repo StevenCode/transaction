@@ -13,10 +13,11 @@
     </modules>
 
     <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jdk.version>1.8</jdk.version>
-    <spring.version>4.3.9.RELEASE</spring.version>
-    <lombok.version>1.16.20</lombok.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk.version>1.8</jdk.version>
+        <spring.version>4.3.9.RELEASE</spring.version>
+        <lombok.version>1.16.20</lombok.version>
+        <guava.version>21.0</guava.version>
     </properties>
 
     <dependencyManagement>
@@ -130,6 +131,11 @@
                 <version>${spring.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
