@@ -25,7 +25,7 @@ public class JavaSerializer implements ObjectSerializer{
     }
 
     @Override
-    public <T> T deSerializer(byte[] param, Class<T> clazz) throws TransactionException {
+    public <T> T deSerialize(byte[] param, Class<T> clazz) throws TransactionException {
         try (ByteArrayInputStream arrayInputStream = new ByteArrayInputStream(param); ObjectInput input = new ObjectInputStream(arrayInputStream)) {
             return (T) input.readObject();
         } catch (IOException | ClassNotFoundException e) {

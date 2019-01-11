@@ -43,7 +43,7 @@ public class DbConfig {
     /**
      * 最小连接池数量.
      */
-    private int minldle = 20;
+    private int minIdle = 20;
 
     /**
      * 配置获取连接等待超时的时间.

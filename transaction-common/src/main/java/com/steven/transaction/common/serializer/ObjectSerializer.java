@@ -27,7 +27,7 @@ public interface ObjectSerializer {
      * @return 对象
      * @throws TransactionException 异常信息
      */
-    <T> T deSerializer(byte[] param, Class<T> clazz) throws TransactionException;
+    <T> T deSerialize(byte[] param, Class<T> clazz) throws TransactionException;
 
     /**
      * 设置scheme.
