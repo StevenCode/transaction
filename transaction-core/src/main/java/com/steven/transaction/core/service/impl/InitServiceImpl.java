@@ -51,7 +51,13 @@ public class InitServiceImpl implements InitService {
     public void initialization(TransactionConfig transactionConfig) {
         Runtime.getRuntime().addShutdownHook(new Thread(() -> LOGGER.error("transaction have error")));
         try {
-
+            loadSpiSupport(transactionConfig);
+            publisher.start(transactionConfig.getBufferSize());
+            coordinatorService.start(transactionConfig);
+            //如果需要自动恢复 开启线程 调度线程池，进行恢复
+            if (transactionConfig.getNeedRecover()) {
+                scheduledService.scheduledAutoRecover(transactionConfig);
+            }
         } catch (Exception e) {
             LogUtil.error(LOGGER, "transaction init fail:{}", e::getMessage);
             //非正常关闭
