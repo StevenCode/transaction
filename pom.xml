@@ -35,6 +35,7 @@
         <nettty.version>4.1.12.Final</nettty.version>
         <gson.verions>2.6.2</gson.verions>
         <druid.version>1.0.29</druid.version>
+        <kryo.version>4.0.0</kryo.version>
         <spring.data.mongodb.version>1.9.1.RELEASE</spring.data.mongodb.version>
     </properties>
 
@@ -198,7 +199,11 @@
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>kryo-shaded</artifactId>
+                <version>${kryo.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
