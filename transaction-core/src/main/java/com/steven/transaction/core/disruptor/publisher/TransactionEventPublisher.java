@@ -6,7 +6,7 @@ import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.dsl.Disruptor;
 import com.lmax.disruptor.dsl.ProducerType;
 import com.steven.transaction.common.bean.entity.Transaction;
-import com.steven.transaction.core.concurrent.coordinator.CoordinatorService;
+import com.steven.transaction.core.coordinator.CoordinatorService;
 import com.steven.transaction.core.concurrent.threadpool.TransactionThreadFactory;
 import com.steven.transaction.core.disruptor.event.TransactionEvent;
 import com.steven.transaction.core.disruptor.factory.TransactionEventFactory;

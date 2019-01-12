@@ -7,7 +7,7 @@ import com.steven.transaction.common.serializer.KryoSerializer;
 import com.steven.transaction.common.serializer.ObjectSerializer;
 import com.steven.transaction.common.utils.LogUtil;
 import com.steven.transaction.common.utils.ServiceBootstrap;
-import com.steven.transaction.core.concurrent.coordinator.CoordinatorService;
+import com.steven.transaction.core.coordinator.CoordinatorService;
 import com.steven.transaction.core.disruptor.publisher.TransactionEventPublisher;
 import com.steven.transaction.core.helper.SpringBeanUtils;
 import com.steven.transaction.core.schedule.ScheduledService;

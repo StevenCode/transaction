@@ -225,7 +225,11 @@
                 <artifactId>disruptor</artifactId>
                 <version>${disruptor.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.verions}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.aspectj</groupId>

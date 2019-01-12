@@ -5,7 +5,7 @@ import com.steven.transaction.common.config.TransactionConfig;
 import com.steven.transaction.common.enums.EventTypeEnum;
 import com.steven.transaction.common.enums.StatusEnum;
 import com.steven.transaction.common.utils.LogUtil;
-import com.steven.transaction.core.concurrent.coordinator.CoordinatorService;
+import com.steven.transaction.core.coordinator.CoordinatorService;
 import com.steven.transaction.core.concurrent.threadpool.TransactionThreadFactory;
 import com.steven.transaction.core.disruptor.publisher.TransactionEventPublisher;
 import com.steven.transaction.core.service.SendMessageService;

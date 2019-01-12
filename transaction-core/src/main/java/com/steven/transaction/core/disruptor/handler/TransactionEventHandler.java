@@ -3,7 +3,7 @@ package com.steven.transaction.core.disruptor.handler;
 import com.lmax.disruptor.WorkHandler;
 import com.steven.transaction.common.bean.entity.Transaction;
 import com.steven.transaction.common.enums.EventTypeEnum;
-import com.steven.transaction.core.concurrent.coordinator.CoordinatorService;
+import com.steven.transaction.core.coordinator.CoordinatorService;
 import com.steven.transaction.core.disruptor.event.TransactionEvent;
 
 import java.util.concurrent.Executor;

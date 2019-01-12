@@ -80,6 +80,14 @@ public class Transaction implements Serializable {
         participants = Lists.newCopyOnWriteArrayList();
     }
 
+
+    public Transaction(final String transId) {
+        this.transId = transId;
+        this.createTime = new Date();
+        this.lastTime = new Date();
+        participants = Lists.newCopyOnWriteArrayList();
+    }
+
     /**
      * add participant.
      * @param participant
