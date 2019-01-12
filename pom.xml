@@ -12,6 +12,7 @@
         <module>transaction-common</module>
         <module>transaction-rpc</module>
         <module>transaction-annotation</module>
+        <module>transaction-mq</module>
     </modules>
 
 
@@ -37,6 +38,9 @@
         <druid.version>1.0.29</druid.version>
         <kryo.version>4.0.0</kryo.version>
         <spring.data.mongodb.version>1.9.1.RELEASE</spring.data.mongodb.version>
+        <amqp-client.version>4.0.3</amqp-client.version>
+        <spring-amqp.version>1.7.4.RELEASE</spring-amqp.version>
+        <spring-rabbit.version>1.7.4.RELEASE</spring-rabbit.version>
     </properties>
 
     <dependencyManagement>
@@ -177,6 +181,23 @@
                 <artifactId>spring-data-mongodb</artifactId>
                 <version>${spring.data.mongodb.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-amqp</artifactId>
+                <version>${spring-amqp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>${amqp-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-rabbit</artifactId>
+                <version>${spring-rabbit.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>

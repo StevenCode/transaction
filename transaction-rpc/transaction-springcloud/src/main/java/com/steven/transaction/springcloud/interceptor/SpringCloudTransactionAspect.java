@@ -13,16 +13,16 @@ import org.springframework.stereotype.Component;
  */
 @Aspect
 @Component
-public class SpringCloundTransactionAspect extends AbstractTransactionAspect implements Ordered {
+public class SpringCloudTransactionAspect extends AbstractTransactionAspect implements Ordered {
 
 
     @Autowired
-    public SpringCloundTransactionAspect(final SpringCloundTransactionAspect springCloundTransactionAspect) {
-        this.setTransactionInterceptor(springCloundTransactionAspect);
+    public SpringCloudTransactionAspect(final SpringCloudTransactionInterceptor springCloudTransactionInterceptor) {
+        this.setTransactionInterceptor(springCloudTransactionInterceptor);
     }
 
     @Override
     public int getOrder() {
-        return 0;
+        return Ordered.HIGHEST_PRECEDENCE;
     }
 }
