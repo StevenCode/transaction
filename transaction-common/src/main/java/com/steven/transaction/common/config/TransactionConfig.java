@@ -91,6 +91,10 @@ public class TransactionConfig {
         builder(builder);
     }
 
+    public static Builder create() {
+        return new Builder();
+    }
+
     public void builder(final Builder builder) {
         this.serializer = builder.serializer;
         this.repositorySuffix = builder.repositorySuffix;

@@ -11,6 +11,7 @@ import com.steven.transaction.core.service.RpcApplicationService;
 import com.steven.transaction.core.spi.CoordinatorRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
@@ -20,6 +21,7 @@ import java.util.List;
  *
  * @author steven
  */
+@Service("coordinatorService")
 public class CoordinatorServiceImpl implements CoordinatorService {
 
     private CoordinatorRepository coordinatorRepository;

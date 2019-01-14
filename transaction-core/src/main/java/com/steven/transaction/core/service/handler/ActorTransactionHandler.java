@@ -10,12 +10,14 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * ActorTransactionHandler.
  *
  * @author steven
  */
+@Component
 public class ActorTransactionHandler implements TransactionHandler {
 
     /**

@@ -7,12 +7,14 @@ import com.steven.transaction.core.service.TransactionFactoryService;
 import com.steven.transaction.core.service.TransactionHandler;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * TransactionAspectServiceImpl.
  *
  * @author steven
  */
+@Component
 public class TransactionAspectServiceImpl implements TransactionAspectService {
 
     private final TransactionFactoryService transactionFactoryService;
