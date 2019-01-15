@@ -7,7 +7,7 @@ import java.util.UUID;
  *
  * @author steven
  */
-public class IdWorkerUtils {
+public final class IdWorkerUtils {
 
     private static final IdWorkerUtils ID_WORKER_UTILS = new IdWorkerUtils();
 

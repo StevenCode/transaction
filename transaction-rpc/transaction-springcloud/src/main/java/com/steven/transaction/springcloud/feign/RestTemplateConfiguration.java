@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Scope;
 public class RestTemplateConfiguration {
 
     @Bean
-    @Scope("pprototype")
+    @Scope("prototype")
     public Feign.Builder feignBuilder() {
         return Feign.builder().requestInterceptor(new RestTemplateInterceptor())
                 .invocationHandlerFactory(invocationHandlerFactory());

@@ -7,7 +7,7 @@ import com.steven.transaction.common.context.TransactionContext;
  *
  * @author steven
  */
-public class TransactionContextLocal {
+public final class TransactionContextLocal {
 
     private static final ThreadLocal<TransactionContext> CURRENT_LOCAL = new ThreadLocal<>();
 

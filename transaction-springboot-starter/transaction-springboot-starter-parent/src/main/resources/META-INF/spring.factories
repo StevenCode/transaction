@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.steven.transaction.springboot.starter.parent.configuration.TransactionAutoConfiguration

@@ -18,7 +18,7 @@ import java.util.Objects;
  *
  * @author steven
  */
-@Service("mythSendMessageService")
+@Service("sendMessageService")
 public class SendMessageServiceImpl implements SendMessageService {
 
     private volatile ObjectSerializer serializer;

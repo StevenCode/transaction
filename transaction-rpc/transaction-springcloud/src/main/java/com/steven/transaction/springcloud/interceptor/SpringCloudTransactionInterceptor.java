@@ -10,6 +10,7 @@ import com.steven.transaction.core.service.TransactionAspectService;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -22,6 +23,7 @@ import java.util.Objects;
  *
  * @author steven
  */
+@Component
 public class SpringCloudTransactionInterceptor implements TransactionInterceptor {
 
     private final TransactionAspectService transactionAspectService;

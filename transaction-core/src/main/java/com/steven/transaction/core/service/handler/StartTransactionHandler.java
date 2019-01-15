@@ -7,12 +7,14 @@ import com.steven.transaction.core.service.TransactionHandler;
 import com.steven.transaction.core.service.engine.TransactionEngine;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * StartTransactionHandler.
  *
  * @author steven
  */
+@Component
 public class StartTransactionHandler implements TransactionHandler {
 
     private final TransactionEngine transactionEngine;

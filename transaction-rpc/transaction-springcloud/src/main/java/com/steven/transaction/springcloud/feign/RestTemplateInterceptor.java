@@ -6,12 +6,14 @@ import com.steven.transaction.common.utils.GsonUtils;
 import com.steven.transaction.core.concurrent.threadlocal.TransactionContextLocal;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * RestTemplateInterceptor.
  *
  * @author steven
  */
+@Configuration
 public class RestTemplateInterceptor implements RequestInterceptor {
     @Override
     public void apply(RequestTemplate requestTemplate) {
